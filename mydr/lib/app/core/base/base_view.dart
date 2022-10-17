@@ -111,7 +111,7 @@ abstract class BaseView<Controller extends BaseController>
   }
 
   Widget? drawer() {
-    List<SideMenuItem> navItems = _getNavItems();
+    // List<SideMenuItem> navItems = _getNavItems();
      return null;
     //   return Drawer(
     //   child: Container(
@@ -136,22 +136,22 @@ abstract class BaseView<Controller extends BaseController>
     // );
   }
 
-  List<SideMenuItem> _getNavItems() {
-    return [
-      SideMenuItem(
-        navTitle: "Item1",
-        navPage: '',
-      ),
-      SideMenuItem(
-        navTitle: "Item2",
-        navPage: '',),
-      SideMenuItem(
-        navTitle: "Item3",
-        navPage: '',
-      )
-
-    ];
-  }
+  // List<SideMenuItem> _getNavItems() {
+  //   return [
+  //     SideMenuItem(
+  //       navTitle: "Item1",
+  //       navPage: '',
+  //     ),
+  //     SideMenuItem(
+  //       navTitle: "Item2",
+  //       navPage: '',),
+  //     SideMenuItem(
+  //       navTitle: "Item3",
+  //       navPage: '',
+  //     )
+  //
+  //   ];
+  // }
 
   Widget _showLoading() {
     return const Loading();
