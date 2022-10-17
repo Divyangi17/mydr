@@ -15,9 +15,10 @@ class DashboardView extends BaseView<DashboardController> {
 
   @override
   PreferredSizeWidget? appBar(BuildContext context) {
-    return CustomAppBar(
-      appBarTitleText: 'GetX Templates on GitHub Dash',
-    );
+    return null;
+    // return CustomAppBar(
+    //   appBarTitleText: 'GetX Templates on GitHub Dash',
+    // );
   }
 
   @override

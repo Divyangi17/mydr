@@ -112,28 +112,28 @@ abstract class BaseView<Controller extends BaseController>
 
   Widget? drawer() {
     List<SideMenuItem> navItems = _getNavItems();
-    // return null;
-      return Drawer(
-      child: Container(
-        color: AppColors.lightGreyColor,
-        child: ListView.builder(
-          itemCount: navItems.length,
-          itemBuilder: (BuildContext context, int index) {
-            String key = navItems[index].navPage;
-            return Column(
-              children: <Widget>[
-                ListTile(
-                  title: new Text(navItems[index].navTitle),
-                ),
-                const Divider(
-                  height: 2.0,
-                ),
-              ],
-            );
-          },
-        ),
-      )
-    );
+     return null;
+    //   return Drawer(
+    //   child: Container(
+    //     color: AppColors.lightGreyColor,
+    //     child: ListView.builder(
+    //       itemCount: navItems.length,
+    //       itemBuilder: (BuildContext context, int index) {
+    //         String key = navItems[index].navPage;
+    //         return Column(
+    //           children: <Widget>[
+    //             ListTile(
+    //               title: new Text(navItems[index].navTitle),
+    //             ),
+    //             const Divider(
+    //               height: 2.0,
+    //             ),
+    //           ],
+    //         );
+    //       },
+    //     ),
+    //   )
+    // );
   }
 
   List<SideMenuItem> _getNavItems() {

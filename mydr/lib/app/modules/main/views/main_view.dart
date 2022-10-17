@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import '../../../core/model/sidemenu_item.dart';
 import '../../../core/values/app_colors.dart';
+import '../../../core/widget/custom_app_bar.dart';
 import '../../dashboard/views/dashboard_view.dart';
 import '/app/core/base/base_view.dart';
 import '/app/modules/favorite/views/favorite_view.dart';
@@ -19,7 +20,10 @@ import 'nav_menu_bar.dart';
 class MainView extends BaseView<MainController> {
   @override
   PreferredSizeWidget? appBar(BuildContext context) {
-    return null;
+    // return null;
+    return CustomAppBar(
+      appBarTitleText: 'GetX Templates on GitHub Dash..',
+    );
   }
 
   @override
@@ -32,16 +36,16 @@ class MainView extends BaseView<MainController> {
 
   @override
   Widget? bottomNavigationBar() {
-
+    // return null;
     return BottomNavBar(onNewMenuSelected: controller.onMenuSelected);
   }
 
-  // @override
-  // Widget? drawer() {
-  //   return NavMenuBar(onNewMenuSelected: controller.onMenuSelected);
-  //
-  //
-  // }
+  @override
+  Widget? drawer() {
+    return NavMenuBar(onNewMenuSelected: controller.onMenuSelected);
+
+
+  }
 
 
   // final HomeView homeView = HomeView();
