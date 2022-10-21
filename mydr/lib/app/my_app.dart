@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
         primaryColor: AppColors.colorPrimary,
         textTheme: const TextTheme(
           button: TextStyle(
-            color: Colors.white,
+            color: Colors.blueAccent,
             fontSize: 20.0,
             fontWeight: FontWeight.bold,
           ),

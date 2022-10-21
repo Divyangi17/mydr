@@ -10,6 +10,7 @@ import '../widget/item_github_project.dart';
 
 class DashboardView extends BaseView<DashboardController> {
   DashboardView() {
+    // Get.put(DashboardController());
     controller.getGithubGetxProjectList();
   }
 

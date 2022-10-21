@@ -8,7 +8,6 @@ import '../../../core/widget/custom_app_bar.dart';
 import '../../dashboard/views/dashboard_view.dart';
 import '/app/core/base/base_view.dart';
 import '/app/modules/favorite/views/favorite_view.dart';
-// import '/app/modules/home/views/home_view.dart';
 import '/app/modules/main/controllers/main_controller.dart';
 import '/app/modules/main/model/menu_code.dart';
 import '/app/modules/main/views/bottom_nav_bar.dart';

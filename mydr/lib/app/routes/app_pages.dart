@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 import 'package:mydr/app/modules/dashboard/views/dashboard_view.dart';
 
 import '../modules/dashboard/bindings/home_binding.dart';
+import '../modules/login/bindings/login_binding.dart';
+import '../modules/login/views/login_view.dart';
 import '/app/modules/favorite/bindings/favorite_binding.dart';
 import '/app/modules/favorite/views/favorite_view.dart';
 // import '/app/modules/home/bindings/home_binding.dart';
@@ -20,13 +22,18 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.MAIN;
+  static const INITIAL = Routes.LOGIN;
 
   static final routes = [
     GetPage(
       name: _Paths.MAIN,
       page: () => MainView(),
       binding: MainBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOGIN,
+      page: () => LoginView(),
+      binding: LoginBinding(),
     ),
     // GetPage(
     //   name: _Paths.HOME,

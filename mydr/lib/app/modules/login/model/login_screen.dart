@@ -1,0 +1,1 @@
+enum LoginScreen { SCREEN1, SCREEN2, SCREEN3, }
