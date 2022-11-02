@@ -17,6 +17,8 @@ class DashboardController extends BaseController {
   List<GithubProjectUiData> get projectList =>
       _githubProjectListController.toList();
 
+  String welcomevideo = "https://firebasestorage.googleapis.com/v0/b/divastore-3a7c5.appspot.com/o/mydr%2Fwelcome.mp4?alt=media&token=ed8e37ac-92ec-4525-a6bc-1f2d8b23c915";
+
   final pagingController = PagingController<GithubProjectUiData>();
 
   void getNavMenu(){

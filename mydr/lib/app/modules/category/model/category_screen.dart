@@ -1,0 +1,1 @@
+enum CategoryScreen { SCREEN1}

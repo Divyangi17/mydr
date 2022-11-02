@@ -39,6 +39,9 @@ class NavMenuBar extends StatelessWidget {
           children: <Widget>[
             ListTile(
               title: new Text(navItems[index].navTitle),
+              onTap: () {
+                Get.toNamed("/category");
+              },
             ),
             const Divider(
               height: 2.0,
@@ -53,7 +56,7 @@ class NavMenuBar extends StatelessWidget {
   List<NavMenuItem> _getNavItems() {
     return [
       NavMenuItem(
-        navTitle: "Item1",
+        navTitle: "Category",
         navPage: '',
       ),
       NavMenuItem(

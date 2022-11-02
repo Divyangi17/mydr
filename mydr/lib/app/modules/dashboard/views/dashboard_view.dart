@@ -8,6 +8,8 @@ import '/app/core/widget/paging_view.dart';
 import '../controllers/dashboard_controller.dart';
 import '../widget/item_github_project.dart';
 
+import 'package:video_player/video_player.dart';
+
 class DashboardView extends BaseView<DashboardController> {
   DashboardView() {
     // Get.put(DashboardController());
@@ -25,38 +27,40 @@ class DashboardView extends BaseView<DashboardController> {
   @override
   Widget body(BuildContext context) {
     return
-    //   Scaffold(
-    //   drawer: NavigationDrawer(),
-    //   appBar: AppBar(
-    //     title: Text('HomeView'),
-    //     centerTitle: true,
+    //   PagingView(
+    //   onRefresh: () async {
+    //     controller.onRefreshPage();
+    //   },
+    //   onLoadNextPage: () {
+    //     controller.onLoadNextPage();
+    //   },
+    //   child: Padding(
+    //     padding: const EdgeInsets.all(AppValues.padding),
+    //     child: Obx(
+    //       () => ListView.separated(
+    //         shrinkWrap: true,
+    //         itemCount: controller.projectList.length,
+    //         primary: false,
+    //         physics: const NeverScrollableScrollPhysics(),
+    //         itemBuilder: (context, index) {
+    //           var model = controller.projectList[index];
+    //
+    //           return ItemGithubProject(dataModel: model);
+    //         },
+    //         separatorBuilder: (BuildContext context, int index) =>
+    //             const SizedBox(height: AppValues.smallMargin),
+    //       ),
+    //     ),
     //   ),
     // );
-      PagingView(
-      onRefresh: () async {
-        controller.onRefreshPage();
-      },
-      onLoadNextPage: () {
-        controller.onLoadNextPage();
-      },
-      child: Padding(
-        padding: const EdgeInsets.all(AppValues.padding),
-        child: Obx(
-          () => ListView.separated(
-            shrinkWrap: true,
-            itemCount: controller.projectList.length,
-            primary: false,
-            physics: const NeverScrollableScrollPhysics(),
-            itemBuilder: (context, index) {
-              var model = controller.projectList[index];
+    SingleChildScrollView(
+      child: Column(
+        children: [
+          Container(
 
-              return ItemGithubProject(dataModel: model);
-            },
-            separatorBuilder: (BuildContext context, int index) =>
-                const SizedBox(height: AppValues.smallMargin),
-          ),
-        ),
-      ),
+          )
+        ],
+      )
     );
   }
 }

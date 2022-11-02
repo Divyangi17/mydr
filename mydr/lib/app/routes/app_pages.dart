@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import 'package:mydr/app/modules/dashboard/views/dashboard_view.dart';
 
+import '../modules/category/bindings/category_binding.dart';
+import '../modules/category/views/category_view.dart';
 import '../modules/dashboard/bindings/home_binding.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
@@ -34,6 +36,11 @@ class AppPages {
       name: _Paths.LOGIN,
       page: () => LoginView(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: _Paths.CATEGORY,
+      page: () => CategoryView(),
+      binding: CategoryBinding(),
     ),
     // GetPage(
     //   name: _Paths.HOME,
